@@ -1,7 +1,9 @@
 "use client";
 
+import axios from "axios";
 import { FC, ReactNode } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 interface ErrorTextProps {
   children: ReactNode;
@@ -31,7 +33,21 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
   } = useForm<formValues>();
 
   const onSubmit = handleSubmit(async (data) => {
-    console.log(data);
+    try {
+      const response = await axios.post("/api/sendEmail",data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response) {
+        toast.success("Message sent successfully");
+      } else {
+        toast.error("Failed to send Message");
+      }
+    } catch (error: any) {
+      toast.error("Failed to send Message:", error);
+    }
   });
   return (
     <form

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Crafting Digital Excellence: Web Developer Portfolio Showcase",
@@ -40,7 +41,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="relative ">{children}</body>
+      <body className="relative ">
+        {children}
+        <Toaster position="bottom-right" reverseOrder={false} />
+      </body>
     </html>
   );
 }

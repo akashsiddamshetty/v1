@@ -42,6 +42,7 @@ export default function RootLayout({
           property="og:description"
           content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality."
         />
+        <meta name="google-site-verification" content="lPmuPUnTrmdssthY_fYnMKPYuPSnpm_yQUv9AyOVhhk" />
         <meta property="og:image" content="/ogmetaimage.jpg" />
         <meta property="og:url" content="https://akashsiddamshetty.in" />
         <meta property="og:type" content="website" />

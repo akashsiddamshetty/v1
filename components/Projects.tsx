@@ -24,7 +24,7 @@ const projectsData = [
     image: "chat-app.jpg",
   },
   {
-    id: 0,
+    id: 1,
     name: "Multi step form",
     url: "https://multistep-form-virid.vercel.app/",
     github: "https://github.com/akashsiddamshetty/multistep-form",

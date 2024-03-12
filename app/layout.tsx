@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Crafting Digital Excellence: Web Developer Portfolio Showcase",
@@ -33,17 +34,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta property="og:title" content="Crafting Digital Excellence: Web Developer Portfolio Showcase" />
-        <meta property="og:description" content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality." />
+        <meta
+          property="og:title"
+          content="Crafting Digital Excellence: Web Developer Portfolio Showcase"
+        />
+        <meta
+          property="og:description"
+          content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality."
+        />
         <meta property="og:image" content="/ogmetaimage.jpg" />
         <meta property="og:url" content="https://akashsiddamshetty.in" />
         <meta property="og:type" content="website" />
         {/* Twitter Meta Tags (optional) */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Crafting Digital Excellence: Web Developer Portfolio Showcase" />
-        <meta name="twitter:description" content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality." />
+        <meta
+          name="twitter:title"
+          content="Crafting Digital Excellence: Web Developer Portfolio Showcase"
+        />
+        <meta
+          name="twitter:description"
+          content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality."
+        />
         <meta name="twitter:image" content="/ogmetaimage.jpg" />
-
 
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,8 +66,10 @@ export default function RootLayout({
         />
       </head>
       <body className="relative ">
-        {children}
-        <Toaster position="bottom-right" reverseOrder={false} />
+        <GoogleAnalytics>
+          {children}
+          <Toaster position="bottom-right" reverseOrder={false} />
+        </GoogleAnalytics>
       </body>
     </html>
   );

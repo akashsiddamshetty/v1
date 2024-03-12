@@ -33,6 +33,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta property="og:title" content="Crafting Digital Excellence: Web Developer Portfolio Showcase" />
+        <meta property="og:description" content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality." />
+        <meta property="og:image" content="/ogmetaimage.jpg" />
+        <meta property="og:url" content="https://akashsiddamshetty.in" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Meta Tags (optional) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Crafting Digital Excellence: Web Developer Portfolio Showcase" />
+        <meta name="twitter:description" content="A web developer from India. Passionate about web apps, I love turning ideas into digital reality with sleek designs and powerful functionality." />
+        <meta name="twitter:image" content="/ogmetaimage.jpg" />
+
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

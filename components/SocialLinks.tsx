@@ -9,7 +9,7 @@ interface SocialLinksProps {
 
 const SocialLinks: FC<SocialLinksProps> = ({ mode }) => {
   return (
-    <div className="flex items-center space-x-4">
+    <address className="flex items-center space-x-4">
       <a
         href="https://github.com/akashsiddamshetty"
         target="_blank"
@@ -43,7 +43,7 @@ const SocialLinks: FC<SocialLinksProps> = ({ mode }) => {
           className="h-6 w-6"
         />
       </a>
-    </div>
+    </address>
   );
 };
 

@@ -8,7 +8,7 @@ interface ProjectsProps {}
 const projectsData = [
   {
     id: 0,
-    name: "Chat App",
+    name: "Easy Chat",
     url: "https://chat-app-y9mn.onrender.com/",
     github: "https://github.com/akashsiddamshetty/chat-app",
     techStack: [

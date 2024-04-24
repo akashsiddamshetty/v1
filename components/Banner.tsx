@@ -60,8 +60,8 @@ const Banner: FC<BannerProps> = ({}) => {
         </div>
 
         <div className="flex-1 flex items-center justify-end">
-          <img
-            src="https://media.licdn.com/dms/image/C5603AQGG2uRK1zsRyw/profile-displayphoto-shrink_400_400/0/1662365517290?e=1715817600&v=beta&t=02UpxrILaOthPvrIocYh3hCsmMvYRjnI3_R7ezK4_Uc"
+          <Image
+            src="/banner-pic.png"
             alt="akash siddamshetty"
             height={800}
             width={400}

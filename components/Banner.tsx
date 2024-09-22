@@ -43,8 +43,8 @@ const techStack = [
 const Banner: FC<BannerProps> = ({}) => {
   return (
     <section className="p-10 sm:py-10 sm:px-20 lg:px-40 ">
-      <div className=" flex flex-col-reverse sm:flex-row items-center sm:items-start justify-between">
-        <div className="flex-1 text-center sm:text-start">
+      <div className=" flex flex-col-reverse gap-4 sm:flex-row items-center sm:items-start justify-between">
+        <div className=" w-[75ch] text-center sm:text-start">
           <h1 className="text-6xl font-bold leading-tight py-4 ">
             Nice to meet you! <br />
             {`I'm`}{" "}
@@ -59,13 +59,13 @@ const Banner: FC<BannerProps> = ({}) => {
           <ContactMeButton />
         </div>
 
-        <div className="flex-1 flex items-center justify-end">
+        <div className=" flex items-center justify-end">
           <Image
             src="/banner-pic-new.png"
             alt="akash siddamshetty"
             height={800}
             width={400}
-            className="w-96 h-96 object-fill sm:w-[400px] lg:h-[500px] "
+            className="w-96 h-96 object-cover sm:w-[400px] lg:h-[500px] "
           />
         </div>
       </div>

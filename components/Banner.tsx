@@ -11,32 +11,32 @@ const techStack = [
   {
     name: "HTML",
     icon: <FaHtml5 />,
-    experience: 2,
+    experience: 3,
   },
   {
     name: "CSS",
     icon: <FaCss3 />,
-    experience: 2,
+    experience: 3,
   },
   {
     name: "Javascript",
     icon: <FaJsSquare />,
-    experience: 2,
+    experience: 3,
   },
   {
     name: "React",
     icon: <FaReact />,
-    experience: 2,
+    experience: 3,
   },
   {
     name: "TypeScript",
     icon: <SiTypescript />,
-    experience: 1,
+    experience: 3,
   },
   {
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
-    experience: 1,
+    experience: 3,
   },
 ];
 
